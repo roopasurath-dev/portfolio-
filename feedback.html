@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Portfolio | Feedback</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">STUDENT PORTFOLIO</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="feedback.html" class="active">Feedback</a>
+        </nav>
+
+    </header>
+
+
+    <main class="feedback-container">
+
+        <section class="feedback-heading">
+
+            <h1>Share Your Feedback</h1>
+
+            <p>
+                Your feedback helps us improve
+                our Student Portfolio website.
+            </p>
+
+        </section>
+
+
+        <section class="feedback-card">
+
+            <form id="feedbackForm">
+
+                <div class="field">
+
+                    <label>Your Name *</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        required>
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>Email Address *</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required>
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>Rate Our Website *</label>
+
+                    <select id="rating" required>
+
+                        <option value="">Select your rating</option>
+
+                        <option value="5">★★★★★ Excellent</option>
+
+                        <option value="4">★★★★ Very Good</option>
+
+                        <option value="3">★★★ Good</option>
+
+                        <option value="2">★★ Average</option>
+
+                        <option value="1">★ Poor</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>Suggestions</label>
+
+                    <textarea
+                        id="suggestions"
+                        placeholder="Any suggestions for improvement?">
+                    </textarea>
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>Your Comments *</label>
+
+                    <textarea
+                        id="comments"
+                        placeholder="Write your feedback here..."
+                        required>
+                    </textarea>
+
+                </div>
+
+
+                <button type="submit" class="primary-btn">
+
+                    Submit Feedback
+
+                </button>
+
+
+                <p id="feedbackMessage" class="message"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/feedback.js"></script>
+
+</body>
+
+</html>

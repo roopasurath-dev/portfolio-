@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Portfolio | Home</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <header>
+        <div class="logo">STUDENT PORTFOLIO</div>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
+
+
+    <!-- Main Section -->
+
+    <main class="home-layout">
+
+        <section class="hero">
+
+            <h1>
+                Welcome to
+                <span>Student Portfolio</span>
+            </h1>
+
+            <p>
+                Create your own professional portfolio
+                by entering your personal and academic details.
+            </p>
+
+            <h2>Showcase Your Talent!</h2>
+
+            <p>
+                Share your education, skills, projects
+                and achievements with the world.
+            </p>
+
+        </section>
+
+
+        <!-- Portfolio Form -->
+
+        <section class="form-card">
+
+            <h2>Create Your Portfolio</h2>
+
+            <form id="portfolioForm">
+
+                <div class="field">
+                    <label>Full Name *</label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        placeholder="Enter your full name"
+                        required>
+                </div>
+
+
+                <div class="field">
+                    <label>Email Address *</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required>
+                </div>
+
+
+                <div class="field">
+                    <label>Contact Number</label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter your phone number">
+                </div>
+
+
+                <div class="field">
+                    <label>Education</label>
+
+                    <input
+                        type="text"
+                        id="education"
+                        placeholder="Enter your education">
+                </div>
+
+
+                <div class="field">
+                    <label>Skills</label>
+
+                    <textarea
+                        id="skills"
+                        placeholder="Enter your skills">
+                    </textarea>
+                </div>
+
+
+                <div class="field">
+                    <label>Projects</label>
+
+                    <textarea
+                        id="projects"
+                        placeholder="Enter your projects">
+                    </textarea>
+                </div>
+
+
+                <div class="field">
+                    <label>Achievements</label>
+
+                    <textarea
+                        id="achievements"
+                        placeholder="Enter your achievements">
+                    </textarea>
+                </div>
+
+
+                <div class="field">
+                    <label>Profile Photo URL</label>
+
+                    <input
+                        type="url"
+                        id="photoUrl"
+                        placeholder="Paste image URL (optional)">
+                </div>
+
+
+                <div class="field">
+                    <label>About Yourself</label>
+
+                    <textarea
+                        id="intro"
+                        placeholder="Write something about yourself">
+                    </textarea>
+                </div>
+
+
+                <button type="submit" class="primary-btn">
+                    Create My Portfolio
+                </button>
+
+                <p id="formMessage" class="message"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/home.js"></script>
+
+</body>
+
+</html>
